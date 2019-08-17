@@ -1,0 +1,95 @@
+{
+  "docs": {
+    "Starter": [
+      "getting-started",
+      "statements-and-expressions",
+      "data-types",
+      "data-structures",
+      "starter-excercise-001",
+      "starter-excercise-001"
+    ],
+    "Variables & Constants": [
+      "variables",
+      "constants",
+      "variables-and-constants-excercise-001"
+    ],
+    "Operators": [
+      "arithmetic-operators",
+      "comparison-operators",
+      "logical-operators",
+      "control-flow-excercise-001",
+      "control-flow-excercise-002",
+      "control-flow-excercise-003"
+    ],
+    "Arrays": [
+      "array-structures",
+      "adding-and-removing-items-in-an-array",
+      "more-array-manipulations",
+      "arrays-excercise-001",
+      "arrays-excercise-002"
+    ],
+    "Objects": [
+      "creating-object-from-the-object",
+      "creating-object-from-curly-braces",
+      "creating-object-from-a-function",
+      "creating-object-from-a-class",
+      "object-properties",
+      "object-methods",
+      "objects-excercise-001",
+      "objects-excercise-002",
+      "objects-excercise-003"
+    ],
+    "Control Flow": [
+      "if-statements",
+      "comparison-operators",
+      "switch-statements",
+      "control-flow-excercise-001"
+    ],
+    "Functions": [
+      "function-declaration",
+      "anonymous-functions",
+      "callbacks",
+      "prototypes",
+      "functions-excercise-001",
+      "functions-excercise-002"
+    ],
+    "Loops & Recursions": [
+      "for-loops",
+      "while-loops",
+      "recursions",
+      "loops-and-recursions-exercise-001",
+      "loops-and-recursions-exercise-002"
+    ],
+    "Classess": [
+      "what-are-classes",
+      "constructors",
+      "inheritance",
+      "classess-excercise-001",
+      "classess-excercise-002"
+    ],
+    "Promises": [
+      "what-are-promises",
+      "resolve-and-reject",
+      "creating-a-promise",
+      "promises-excercise-001",
+      "promises-excercise-002"
+    ],
+    "Async & Await": [
+      "what-is-async-await",
+      "why-async-await",
+      "how-to-use-async-await",
+      "async-await-excercise-001",
+      "async-await-excercise-002"
+    ],
+    "Error Handling": [
+      "types-of-errors",
+      "throwing-an-error",
+      "try-catch-finally",
+      "error-handling-excercise-001",
+      "error-handling-excercise-002"
+    ],
+    "Misc": [
+      "further-learning"
+    ]
+  }
+}
