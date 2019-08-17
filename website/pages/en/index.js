@@ -87,7 +87,7 @@ class Index extends React.Component {
                   "const greet = (name = 'World') => {\n"
                   + "  return 'Hello, ' + name + '!';\n"
                   + "}\n"
-                  + "\n"
+                  + "\/\/ Let's say hello to Peter. 😀 \n"
                   + "greet('Peter'); \/\/ Hello, Peter!\n"
                 }
               </SyntaxHighlighter>
