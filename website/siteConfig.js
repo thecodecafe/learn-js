@@ -71,18 +71,16 @@ const siteConfig = {
   },
 
   /* Custom fonts for website */
-  /*
   fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
+    copyFont: [
+      "Lato",
+      "sans-serif"
     ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
+    codeFont: [
+      "Ubuntu",
+      "sans-serif"
     ]
   },
-  */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} TheCodeCafe`,
@@ -144,7 +142,8 @@ const siteConfig = {
   },
   gaTrackingId: 'UA-145866759-1',
   stylesheets: [
-    'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
+    'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
+    'https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900|Ubuntu&display=swap'
   ],
   pageCodeStyle: require('./codeStyle'),
 };
