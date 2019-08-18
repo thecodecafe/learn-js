@@ -123,7 +123,7 @@ const siteConfig = {
   algolia: {
     appId: 'TPB7E4EB96',
     indexName: 'learn-javascript',
-    apiKey: 'f7a8b8bb36636b2452aca21bd72707c7'
+    apiKey: 'api-key-placeholder'
   },
 
   repoUrl: 'https://github.com/thecodecafe/learn-js',
