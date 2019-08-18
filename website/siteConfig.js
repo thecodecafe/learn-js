@@ -27,13 +27,13 @@ const siteConfig = {
   title: 'Learn Javascript', // Title for your website.
   tagline: 'The ultimate guide to learning javascript.',
   url: 'https://thecodecafe.github.io', // Your website URL
-  baseUrl: '/learn.js/', // Base URL for your project */
+  baseUrl: '/learn-js/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'learn.js',
+  projectName: 'learn-js',
   organizationName: 'thecodecafe',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
@@ -42,9 +42,9 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'getting-started', label: 'Start Learning'},
-    {href: 'https://github.com/thecodecafe/learn.js/issues', label: 'Ask Questions', external: true},
+    {href: 'https://github.com/thecodecafe/learn-js/issues', label: 'Ask Questions', external: true},
     {search: true},
-    {href: 'https://github.com/thecodecafe/learn.js', label: 'GtiHub', external: true},
+    {href: 'https://github.com/thecodecafe/learn-js', label: 'GtiHub', external: true},
   ],
 
   // If you have users set above, you add it here:
@@ -126,7 +126,7 @@ const siteConfig = {
     apiKey: 'f7a8b8bb36636b2452aca21bd72707c7'
   },
 
-  repoUrl: 'https://github.com/thecodecafe/learn.js',
+  repoUrl: 'https://github.com/thecodecafe/learn-js',
 
   scrollToTop: true,
   scrollToTopOptions: {

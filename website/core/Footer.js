@@ -45,11 +45,11 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>Community</h5>
-            <a href='https://github.com/thecodecafe/learn.js/issues' target='_blank'>
+            <a href='https://github.com/thecodecafe/learn-js/issues' target='_blank'>
               Ask Questions
             </a>
             <a
-              href="https://github.com/thecodecafe/learn.js"
+              href="https://github.com/thecodecafe/learn-js"
               target="_blank"
               rel="noreferrer noopener">
               Contribute
@@ -63,14 +63,14 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>More</h5>
-            <a href="https://github.com/thecodecafe/learn.js">GitHub</a>
+            <a href="https://github.com/thecodecafe/learn-js">GitHub</a>
 
             <a 
               className="github-button"
-              href="https://github.com/thecodecafe/learn.js"
+              href="https://github.com/thecodecafe/learn-js"
               data-icon="octicon-star"
               data-show-count="true"
-              aria-label="Star thecodecafe/learn.js on GitHub"
+              aria-label="Star thecodecafe/learn-js on GitHub"
             >Star</a>
 
             {this.props.config.twitterUsername && (

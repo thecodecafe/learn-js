@@ -59,10 +59,10 @@ class Index extends React.Component {
                 <li className="mr-4">
                   <a
                     className="github-button"
-                    href="https://github.com/thecodecafe/learn.js"
+                    href="https://github.com/thecodecafe/learn-js"
                     data-icon="octicon-star"
                     data-show-count="true"
-                    aria-label="Star thecodecafe/learn.js on GitHub"
+                    aria-label="Star thecodecafe/learn-js on GitHub"
                   >Star</a>
                 </li>
                 <li>
@@ -168,7 +168,7 @@ class Index extends React.Component {
                     </p>
                     <div>
                       <a
-                        href="https://github.com/thecodecafe/learn.js/issues"
+                        href="https://github.com/thecodecafe/learn-js/issues"
                         className="button primary large"
                         target="_blank"
                       >
