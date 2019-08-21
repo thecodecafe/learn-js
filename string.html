@@ -1,0 +1,141 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>String · Learn Javascript</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## What Is String?"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="String · Learn Javascript"/><meta property="og:type" content="website"/><meta property="og:url" content="https://thecodecafe.github.io/learn-js/"/><meta property="og:description" content="## What Is String?"/><meta property="og:image" content="https://thecodecafe.github.io/learn-js/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://thecodecafe.github.io/learn-js/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/learn-js/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-145866759-1', 'auto');
+              ga('send', 'pageview');
+            </script><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900|Ubuntu&amp;display=swap"/><link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100,"textColor":"#F0DB4F","backgroundColor":"#323330","scrollDuration":200}
+          )
+        });
+        </script><script src="/learn-js/js/scrollSpy.js"></script><link rel="stylesheet" href="/learn-js/css/main.css"/><script src="/learn-js/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/learn-js/"><img class="logo" src="/learn-js/img/dark-logo.png" alt="Learn Javascript"/></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/learn-js/getting-started" target="_self">Start Learning</a></li><li class=""><a href="https://github.com/thecodecafe/learn-js/issues" target="_blank">Ask Questions</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><li class=""><a href="https://github.com/thecodecafe/learn-js" target="_blank">GtiHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Data Types</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Starter<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/learn-js/getting-started">Getting Started</a></li><li class="navListItem"><a class="navItem" href="/learn-js/environment-setup">Environment Setup</a></li><li class="navListItem"><a class="navItem" href="/learn-js/the-console">The Console</a></li><li class="navListItem"><a class="navItem" href="/learn-js/expressions-and-statements">Expressions &amp; Statements</a></li><li class="navListItem"><a class="navItem" href="/learn-js/comments">Comments</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Data Types<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/learn-js/the-type-system">The Type System</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/learn-js/string">String</a></li><li class="navListItem"><a class="navItem" href="/learn-js/number">Number</a></li><li class="navListItem"><a class="navItem" href="/learn-js/boolean">Boolean</a></li><li class="navListItem"><a class="navItem" href="/learn-js/null-and-undefined">Null &amp; Undefined</a></li><li class="navListItem"><a class="navItem" href="/learn-js/data-types-summary">Summary</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">More<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/learn-js/further-learning">Further Learning</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">String</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="what-is-string"></a><a href="#what-is-string" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What Is String?</h2>
+<p>A string is a sequence of alpha, numeric, or special character(s) that is data and that is treated as a word, sentence, or character, in our code.
+We create strings by enclosing our words or characters in a pair of single or double quotation marks, see the examplr below.</p>
+<h3><a class="anchor" aria-hidden="true" id="example-1"></a><a href="#example-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example 1</h3>
+<pre><code class="hljs css language-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'this is a string'</span>); <span class="hljs-comment">// this is a string</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"this is a string"</span>); <span class="hljs-comment">// this is a string</span>
+</code></pre>
+<p>Regardless of what method you choose to create your string it will result in you having the same thing; a collection of characters that are treated as data within your code.</p>
+<h2><a class="anchor" aria-hidden="true" id="concatination"></a><a href="#concatination" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Concatination</h2>
+<p>Concatination is the majority of the string manipulation being done in any software programme, this basically is the process of joining two strings together, this is achieved using the plus <code>+</code> sign in-between two strings. Let's see what that looks like.</p>
+<h3><a class="anchor" aria-hidden="true" id="example-2"></a><a href="#example-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example 2</h3>
+<pre><code class="hljs css language-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello, "</span> + <span class="hljs-string">"world!"</span>); <span class="hljs-comment">// Hello, world</span>
+</code></pre>
+<p>in the expression above, we were able to join two strings (<code>Hello,</code> and <code>world</code>) into one using the plus sign, this results in us having one string which is <code>Hello, world</code>, this in a nutshell is what string concatination is.</p>
+<h2><a class="anchor" aria-hidden="true" id="template-literals"></a><a href="#template-literals" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Template Literals</h2>
+<p>A template literal is a way to concatenate strings while allowing embedded expressions and improving readability.
+Creating a template literal is similar to how we would normally create a string, only in this case instead of using a pair of quotation marks we would be using two back-tick characters to enclose whatever we want to represent as string.
+This method however does not just create a string but also allows for embedded expressions, these can either be variables, a mathmatical operation, etc.
+Let's break down an example.</p>
+<h3><a class="anchor" aria-hidden="true" id="example-3"></a><a href="#example-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example 3</h3>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">let</span> firstName = <span class="hljs-string">"Naruto"</span>;
+<span class="hljs-keyword">let</span> village = <span class="hljs-string">"Konoha"</span>;
+
+<span class="hljs-keyword">let</span> sentence = <span class="hljs-string">`My name is, <span class="hljs-subst">${firstName}</span>, I am from <span class="hljs-subst">${village}</span>.`</span>;
+<span class="hljs-comment">// My name is Naruto, I am from Konoha.; </span>
+</code></pre>
+<p>In the code above we used the template literal to create a sentence and then within the sentence referenced our variables, which contain the data we want to add to our sentence. Each variable is referenced using the dollar sign <code>$</code>, a pair of curly braces <code>{}</code>, and then in-between the curly braces we put the name of the variable we would like to have the value of in that part of the sentence, this produces a sentence like so <code>My name is Naruto, I am from Konoha.</code></p>
+<div class="take-note mb-3">
+<i class="em em-bulb"></i>
+Variables are containers we use to move data around in our code, they can contain any "type" of data. 
+</div>
+<h2><a class="anchor" aria-hidden="true" id="escaping-characters"></a><a href="#escaping-characters" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Escaping Characters</h2>
+<p>Escaping characters allows us do two things.</p>
+<ol>
+<li>Add invalid characters to our string, these are characters that can make our code throw an error.</li>
+<li>Display characters that normally won't be displayed when we output our string to an interface.</li>
+</ol>
+<p>To escape a character we will need to add the backslash(<code>\</code>) right before the character we would like to escape.</p>
+<h3><a class="anchor" aria-hidden="true" id="example-4"></a><a href="#example-4" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example 4</h3>
+<pre><code class="hljs css language-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Add the double quote(\") to the output."</span>);
+<span class="hljs-comment">// Add the double quote(") to the output.</span>
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'This isn\'t a test.'</span>);
+<span class="hljs-comment">// This isn't a test.</span>
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Show the backslash(\\) sign."</span>);
+<span class="hljs-comment">// Show the backslash(\) sign.</span>
+</code></pre>
+<p>This comes in handy when we want to add a pair of double quotes inside a double quoted string, an apostrophe sign in a single quoted string, or want to show the backslash in a string output.
+There are several other use cases but this should help you see the relevance of being able to escaping characters.</p>
+<h2><a class="anchor" aria-hidden="true" id="conclusion"></a><a href="#conclusion" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Conclusion</h2>
+<p>Wo in this section we said, strings are used to contain words, sentences, or characters that is data and not a keyword within our code, we also said that multiple strings can be joined together through an opearion called concatination, and that concatination can also be achieve using template literals, and also more than just to help facilitate concatination, template literals allow us to embed expressions within a string, this makes reading code easier for other developer, finally we said that there are times we would want to add invalid characters, or non-displayable to our string output, and we can do that by placing a backslash right before the character we would like to include in our string output.</p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-8-21 by Daniel Barde</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/learn-js/the-type-system"><span class="arrow-prev">← </span><span>The Type System</span></a><a class="docs-next button" href="/learn-js/number"><span>Number</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#what-is-string">What Is String?</a><ul class="toc-headings"><li><a href="#example-1">Example 1</a></li></ul></li><li><a href="#concatination">Concatination</a><ul class="toc-headings"><li><a href="#example-2">Example 2</a></li></ul></li><li><a href="#template-literals">Template Literals</a><ul class="toc-headings"><li><a href="#example-3">Example 3</a></li></ul></li><li><a href="#escaping-characters">Escaping Characters</a><ul class="toc-headings"><li><a href="#example-4">Example 4</a></li></ul></li><li><a href="#conclusion">Conclusion</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/learn-js/" class="nav-home"><img src="/learn-js/img/white-logo.png" alt="Learn Javascript" class="footer-logo"/></a><div><h5>Learn</h5><a href="/learn-js/getting-started">Getting Started</a><a href="/learn-js/further-learning">Further Learning</a></div><div><h5>Community</h5><a href="https://github.com/thecodecafe/learn-js/issues" target="_blank">Ask Questions</a><a href="https://github.com/thecodecafe/learn-js" target="_blank" rel="noreferrer noopener">Contribute</a><a href="https://twitter.com/mrbarde2k" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://github.com/thecodecafe/learn-js">GitHub</a><a class="github-button" href="https://github.com/thecodecafe/learn-js" data-icon="octicon-star" data-show-count="true" aria-label="Star thecodecafe/learn-js on GitHub">Star</a><div class="social"><a href="https://twitter.com/mrbarde2k" class="twitter-follow-button">Follow @mrbarde2k</a></div></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"></a><section class="copyright">Copyright © 2019 TheCodeCafe</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                appId: 'TPB7E4EB96',
+                apiKey: 'api-key-placeholder',
+                indexName: 'learn-javascript',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>

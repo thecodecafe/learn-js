@@ -1,0 +1,134 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Comments · Learn Javascript</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Comments are used within our code to tell other developers what our code is meant to do, they mainly invented for that purpose although today, they are used for more than just that, depending on the language you&#x27;re coding with. Your text within your comments will not executte while your code is running."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Comments · Learn Javascript"/><meta property="og:type" content="website"/><meta property="og:url" content="https://thecodecafe.github.io/learn-js/"/><meta property="og:description" content="Comments are used within our code to tell other developers what our code is meant to do, they mainly invented for that purpose although today, they are used for more than just that, depending on the language you&#x27;re coding with. Your text within your comments will not executte while your code is running."/><meta property="og:image" content="https://thecodecafe.github.io/learn-js/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://thecodecafe.github.io/learn-js/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/learn-js/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-145866759-1', 'auto');
+              ga('send', 'pageview');
+            </script><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900|Ubuntu&amp;display=swap"/><link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100,"textColor":"#F0DB4F","backgroundColor":"#323330","scrollDuration":200}
+          )
+        });
+        </script><script src="/learn-js/js/scrollSpy.js"></script><link rel="stylesheet" href="/learn-js/css/main.css"/><script src="/learn-js/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/learn-js/"><img class="logo" src="/learn-js/img/dark-logo.png" alt="Learn Javascript"/></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/learn-js/getting-started" target="_self">Start Learning</a></li><li class=""><a href="https://github.com/thecodecafe/learn-js/issues" target="_blank">Ask Questions</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><li class=""><a href="https://github.com/thecodecafe/learn-js" target="_blank">GtiHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Starter</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Starter<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/learn-js/getting-started">Getting Started</a></li><li class="navListItem"><a class="navItem" href="/learn-js/environment-setup">Environment Setup</a></li><li class="navListItem"><a class="navItem" href="/learn-js/the-console">The Console</a></li><li class="navListItem"><a class="navItem" href="/learn-js/expressions-and-statements">Expressions &amp; Statements</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/learn-js/comments">Comments</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Data Types<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/learn-js/the-type-system">The Type System</a></li><li class="navListItem"><a class="navItem" href="/learn-js/string">String</a></li><li class="navListItem"><a class="navItem" href="/learn-js/number">Number</a></li><li class="navListItem"><a class="navItem" href="/learn-js/boolean">Boolean</a></li><li class="navListItem"><a class="navItem" href="/learn-js/null-and-undefined">Null &amp; Undefined</a></li><li class="navListItem"><a class="navItem" href="/learn-js/data-types-summary">Summary</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">More<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/learn-js/further-learning">Further Learning</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Comments</h1></header><article><div><span><p>Comments are used within our code to tell other developers what our code is meant to do, they mainly invented for that purpose although today, they are used for more than just that, depending on the language you're coding with. Your text within your comments will not executte while your code is running.</p>
+<h2><a class="anchor" aria-hidden="true" id="two-types-of-comments"></a><a href="#two-types-of-comments" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Two Types Of Comments</h2>
+<p>It's some sort of a running gag already that there are two or more types of anything in Javascript so let's just quickly look at the two types of comments we have.</p>
+<h3><a class="anchor" aria-hidden="true" id="inline-comments"></a><a href="#inline-comments" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Inline Comments</h3>
+<p>Inline comments are used in cases where a comment only spans a single line of code, that is, we do not break into a new paragraph when writing the comment, they are the faster and easier way to write comments in Javascript. They start with two forward slashes, a space, and then the comment you would like to make. See correct and incorrect ways to write comments below.</p>
+<p><strong>Correct (recommended)</strong></p>
+<pre><code class="hljs css language-js"><span class="hljs-comment">// This code makes birds fly.</span>
+</code></pre>
+<p>The correct and recommended method of writting inline comments is correct because we write the whole comment in a single line.</p>
+<p><strong>Incorrect</strong></p>
+<pre><code class="hljs css language-js"><span class="hljs-comment">// This code makes</span>
+birds fly.
+</code></pre>
+<p>The incorrect method of writting inline comments is incorrect because we broke out of the comment paragraph and started a new line, this will throw an error in our code, because birds and fly will be seen as literals within our code.</p>
+<p><strong>Correct (not recommended)</strong></p>
+<pre><code class="hljs css language-js"><span class="hljs-comment">// This code</span>
+<span class="hljs-comment">// makes birds fly.</span>
+</code></pre>
+<p>The correct but not recommended method of writting inline comments is correct because for each line we started with two forward slashes but is not recommended for two reasone, the first reason is that we already have a solution for multiline comments so we shouldn't be using this for that, the second reason is that we are adding unnecessary lines to our code when our comment can be written on a single line.</p>
+<h3><a class="anchor" aria-hidden="true" id="multiline-comments"></a><a href="#multiline-comments" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Multiline Comments</h3>
+<p>Multiline comments are comments that span multiple lines, this is good for when your comment cannot fit into a single line, or we need to add some more data to properly describe what we are commenting on. The multiline comment starts with a forward slash, asterisk sign, and space and ends with a space, an asterisk sign, and a forward slash. See mutiline comment example below.</p>
+<p><strong>Recommended</strong></p>
+<pre><code class="hljs css language-js"><span class="hljs-comment">/*
+  The quick brown fox jumped over the lazy dog, but one day when the
+  fox tried to jump over the lazy dog, there was no dog to jump over,
+  so the quick brown fox jumped over the lazy dog no more.
+*/</span>
+</code></pre>
+<p>This is recommended because as you can see it utilizes the multiline commenting method to properly lump a couple of paragraphs into one comment in a clean manner.</p>
+<p><strong>Not Recommended</strong></p>
+<pre><code class="hljs css language-js"><span class="hljs-comment">/*
+  This code makes birds fly.
+*/</span>
+</code></pre>
+<p>This is not recommended because the comment itself can be written in the very same way on a single line.</p>
+<h2><a class="anchor" aria-hidden="true" id="conslusion"></a><a href="#conslusion" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Conslusion</h2>
+<p>In this section we said:</p>
+<ul>
+<li>Comments are used for describing what our code does.</li>
+<li>Code written within our comments do not execute when our code is being run.</li>
+<li>There are two types of comments and they are, inline and multiline comments.</li>
+<li>Inline comments are used for writing comments on a single line.</li>
+<li>Multiline comments are used for writing comments that span multiple lines.</li>
+</ul>
+<p>Finally I'll say, the recommended methods for using the two types of comments are what I stand by but this is all based on preference, you might find yourself working in teams that use them differently but the recommended use in this section is the standard for most teams or organisations.</p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-8-21 by Daniel Barde</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/learn-js/expressions-and-statements"><span class="arrow-prev">← </span><span>Expressions &amp; Statements</span></a><a class="docs-next button" href="/learn-js/the-type-system"><span>The Type System</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#two-types-of-comments">Two Types Of Comments</a><ul class="toc-headings"><li><a href="#inline-comments">Inline Comments</a></li><li><a href="#multiline-comments">Multiline Comments</a></li></ul></li><li><a href="#conslusion">Conslusion</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/learn-js/" class="nav-home"><img src="/learn-js/img/white-logo.png" alt="Learn Javascript" class="footer-logo"/></a><div><h5>Learn</h5><a href="/learn-js/getting-started">Getting Started</a><a href="/learn-js/further-learning">Further Learning</a></div><div><h5>Community</h5><a href="https://github.com/thecodecafe/learn-js/issues" target="_blank">Ask Questions</a><a href="https://github.com/thecodecafe/learn-js" target="_blank" rel="noreferrer noopener">Contribute</a><a href="https://twitter.com/mrbarde2k" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://github.com/thecodecafe/learn-js">GitHub</a><a class="github-button" href="https://github.com/thecodecafe/learn-js" data-icon="octicon-star" data-show-count="true" aria-label="Star thecodecafe/learn-js on GitHub">Star</a><div class="social"><a href="https://twitter.com/mrbarde2k" class="twitter-follow-button">Follow @mrbarde2k</a></div></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"></a><section class="copyright">Copyright © 2019 TheCodeCafe</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                appId: 'TPB7E4EB96',
+                apiKey: 'api-key-placeholder',
+                indexName: 'learn-javascript',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>
