@@ -3,6 +3,23 @@ body{
     font-family: $copyFont;
 }
 
+/**
+ * Figure Containers
+ */
+.fig-sm{ max-width: 360px; }
+.fig-md{ max-width: 480px; }
+.fig-lg{ max-width: 720px; }
+.fig-full{ max-width: 100%; }
+.fig-sm img, .fig-md img, .fig-lg img, .fig-full img{ 
+    width: 100%;
+    border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+
 .fixedHeaderContainer{
     min-height: 60px;
     padding: 13px 0px;
@@ -187,6 +204,24 @@ a.button.large{
     position: relative;
     float: left;
     width: 100%;
+}
+
+.mainContainer .post a{
+    color: $secondaryColor;
+    background-color: $light;
+    border-bottom: dotted 1px $secondaryColor;
+    display: inline-block;
+}
+
+.mainContainer .post .take-note{
+    background-color: $tintColor;
+    color: $subtle;
+    padding: 16px 16px;
+    border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -mox-border-radius: 8px;
+    -webkit-border-radius: 8px;
 }
 
 .what-you-will-learn{
