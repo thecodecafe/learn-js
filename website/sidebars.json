@@ -2,24 +2,35 @@
   "docs": {
     "Starter": [
       "getting-started",
-      "statements-and-expressions",
-      "data-types",
-      "data-structures",
-      "starter-excercise-001",
-      "starter-excercise-001"
+      "environment-setup",
+      "the-console",
+      "expressions-and-statements",
+      "comments"
     ],
-    "Variables & Constants": [
-      "variables",
-      "constants",
-      "variables-and-constants-excercise-001"
+    "Data Types": [
+      "the-type-system",
+      "string",
+      "number",
+      "boolean",
+      "null-and-undefined",
+      "data-types-summary"
+    ],
+    "Data Structures": [
+      "array",
+      "object"
     ],
     "Operators": [
       "arithmetic-operators",
       "comparison-operators",
       "logical-operators",
-      "control-flow-excercise-001",
-      "control-flow-excercise-002",
-      "control-flow-excercise-003"
+      "operators-excercise-001",
+      "operators-excercise-002",
+      "operators-excercise-003"
+    ],
+    "Variables & Constants": [
+      "variables",
+      "constants",
+      "variables-and-constants-recap"
     ],
     "Arrays": [
       "array-structures",
@@ -29,10 +40,8 @@
       "arrays-excercise-002"
     ],
     "Objects": [
-      "creating-object-from-the-object",
+      "creating-object-from-object",
       "creating-object-from-curly-braces",
-      "creating-object-from-a-function",
-      "creating-object-from-a-class",
       "object-properties",
       "object-methods",
       "objects-excercise-001",
@@ -41,17 +50,23 @@
     ],
     "Control Flow": [
       "if-statements",
-      "comparison-operators",
+      "nested-if-statements",
       "switch-statements",
-      "control-flow-excercise-001"
+      "control-flow-excercise-001",
+      "control-flow-excercise-002"
     ],
     "Functions": [
-      "function-declaration",
+      "what-is-a-function",
+      "arrow-functions",
       "anonymous-functions",
-      "callbacks",
+      "function-arguments",
+      "callbacks-and-closures",
+      "creating-object-from-a-function",
+      "what-is-this",
       "prototypes",
       "functions-excercise-001",
-      "functions-excercise-002"
+      "functions-excercise-002",
+      "functions-excercise-003"
     ],
     "Loops & Recursions": [
       "for-loops",
@@ -62,6 +77,7 @@
     ],
     "Classess": [
       "what-are-classes",
+      "instantiation",
       "constructors",
       "inheritance",
       "classess-excercise-001",
@@ -76,8 +92,7 @@
     ],
     "Async & Await": [
       "what-is-async-await",
-      "why-async-await",
-      "how-to-use-async-await",
+      "how-to-async-await",
       "async-await-excercise-001",
       "async-await-excercise-002"
     ],
@@ -88,7 +103,17 @@
       "error-handling-excercise-001",
       "error-handling-excercise-002"
     ],
-    "Misc": [
+    "Arrays Advanced": [
+      "array-map",
+      "array-for-each",
+      "array-reduce",
+      "array-sort",
+      "arrays-excercise-001",
+      "arrays-excercise-002"
+    ],
+    "More": [
+      "clean-code-principles",
+      "naming-conventions",
       "further-learning"
     ]
   }
